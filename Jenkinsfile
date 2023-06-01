@@ -3,14 +3,14 @@ pipeline
     agent any
     stages
     {
-        stage('ContinuousDownload_master')
+        stage('ContinuousDownload_loans')
         {
             steps
             {
                 git 'https://github.com/intelliqittrainings/maven.git'
             }
         }
-        stage('ContinuousBuild_master')
+        stage('ContinuousBuild_loans')
         {
             steps
             {
